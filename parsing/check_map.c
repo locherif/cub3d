@@ -25,16 +25,16 @@ int	stringlen(char *str)
 	return (i);
 }
 
-char	*copy_line(char *str)
-{
-	char	*res;
+// char	*copy_line(char *str)
+// {
+// 	char	*res;
 
-	res = (char *)malloc(sizeof(char) * (stringlen(str) + 1));
-	if (!res)
-		return (NULL);
-	res = ft_strcpy(res, str);
-	return (res);
-}
+// 	res = (char *)malloc(sizeof(char) * (stringlen(str) + 1));
+// 	if (!res)
+// 		return (NULL);
+// 	res = ft_strcpy(res, str);
+// 	return (res);
+// }
 
 void	get_map_in_file(int len, char **file, char *map)
 {
@@ -124,7 +124,8 @@ int	parsing(char *file_name)
 		return (0);
 	map[len] = '\0';
 	get_map_in_file(len, map, file_name);
-	print_tab(map);
+	check_config(map);
+	// print_tab(map);
 	free_tab(map);
 	return (1);
 }

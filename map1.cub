@@ -1,7 +1,11 @@
-NO ./textures/simple_wall.xpm
-SO ./textures/simple_wall.xpm
-WE ./textures/simple_wall.xpm
-EA ./textures/simple_wall.xpm
+NO altar.xpm
+SO dungeon_door-open.xpm
+WE dungeon_door-closed.xpm
+
+
+
+
+EA altar.xpm
 
 F 255,0,255
 C 0,255,0
@@ -11,13 +15,3 @@ C 0,255,0
 100N1
 11111
 
-
-
-v
-jkl
-
-
-
-
-
-y

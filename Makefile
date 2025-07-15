@@ -5,7 +5,7 @@ CFLAGS     = -Wall -Wextra -Werror -I./includes
 
 MLX_FLAGS  = -L./minilibx-linux -lmlx -lXext -lX11 -lm
 
-SRCS       = cub3d.c utils/get_next_line.c utils/ft_split.c parsing/check_map.c utils/get_next_line_utils.c
+SRCS       = cub3d.c utils/get_next_line.c utils/ft_split.c parsing/check_map.c utils/get_next_line_utils.c utils/utils_functions.c parsing/check_config.c
 OBJS       = $(SRCS:.c=.o)
 
 
