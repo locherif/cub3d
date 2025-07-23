@@ -6,28 +6,32 @@
 /*   By: locherif <locherif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 16:01:32 by yutopcu           #+#    #+#             */
-/*   Updated: 2025/06/28 16:43:50 by locherif         ###   ########.fr       */
+/*   Updated: 2025/07/22 20:03:30 by locherif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cube.h"
 
-char	*ft_strdup(char *s1)
+char	*ft_strdup(char *str)
 {
-	char			*dest;
-	unsigned int	i;
+	int		i;
+	int		len;
+	char	*new_str;
 
-	dest = (char *)malloc(ft_strlen(s1) + 1);
-	if (!dest)
+	len = 0;
+	while (str[len])
+		len++;
+	new_str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(new_str))
 		return (NULL);
 	i = 0;
-	while (s1[i])
+	while (str[i])
 	{
-		dest[i] = s1[i];
+		new_str[i] = str[i];
 		i++;
 	}
-	dest[i] = 0;
-	return (dest);
+	new_str[i] = '\0';
+	return (new_str);
 }
 
 size_t	ft_strlen(const char *s)
