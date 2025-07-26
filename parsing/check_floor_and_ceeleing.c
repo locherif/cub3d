@@ -66,13 +66,13 @@ int	check_colors(char **map, int i)
 	return (1);
 }
 
-int	check_floor_and_ceeleing(char **map)
+int	check_floor_and_ceeleing(char **map, int start)
 {
 	int	i;
 	int	count;
 	int	res;
 
-	i = 4;
+	i = start;
 	count = 0;
 	while (map[i])
 	{

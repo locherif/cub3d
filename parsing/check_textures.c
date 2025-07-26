@@ -68,7 +68,7 @@ int	check_textures(char **map)
 		while (empty_line(map[i]))
 			i++;
 		if (count == 4)
-			return (1);
+			return (i);
 		j = go_to_second_word(map[i]);
 		str = copy_second_word(j, map[i]);
 		if (!try_to_open(str))

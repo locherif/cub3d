@@ -1,15 +1,13 @@
-NO altar.xpm
-SO dungeon_door-open.xpm
-WE dungeon_door-closed.xpm
-EA altar.xpm
+NO textures/altar.xpm
+SO textures/dungeon_door-open.xpm
+WE textures/dungeon_door-closed.xpm 
+EA textures/altar.xpm
 
-C 0,255,0
 F 255,0,255
+C 0,255,0
 
-
-
+1111
+10001   
+11W1 
+10011
 11111
-10001
-11W 1
-11111
-

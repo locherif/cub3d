@@ -55,13 +55,16 @@ int	check_config(char **map)
 	int start;
 	if (!check_directions(map))
 		return (0);
-	if (!check_textures(map))
+	start = check_textures(map);
+	if (!start)
 		return (0);
-	start = check_floor_and_ceeleing(map);
+	start = check_floor_and_ceeleing(map, start);
 	if (!start)
 		return (0);
 	if (check_game_map(map, start))
 		return (0);
 	// ne pas oublier de remplir les espaces par des 1 pour smplifier le ray cating !!!
+	// && de verifier les map que je peux pas encore detecter celles sur le cote
+	// peut etre trie te infos dans une tructure apres ca
 	return (1);
 }

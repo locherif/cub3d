@@ -44,7 +44,7 @@ int			find_map_len(char *map);
 void		print_tab(char **tab);
 int			tab_len(char **tab);
 int			check_textures(char **map);
-int			check_floor_and_ceeleing(char **map);
+int			check_floor_and_ceeleing(char **map, int start);
 char		*copy_second_word(int start, char *line);
 int			if_second_word(char *str);
 int			look_first_word(char **str, int pos);
